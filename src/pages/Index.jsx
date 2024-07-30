@@ -15,16 +15,16 @@ const Index = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <h1 className="text-3xl font-bold mb-4">Rome Explorer</h1>
+      <h1 className="text-3xl font-bold mb-4">Reykjavik Explorer</h1>
       <div className="w-full max-w-4xl h-[600px] mb-8">
-        <MapContainer center={[41.9028, 12.4964]} zoom={13} className="h-full">
+        <MapContainer center={[64.1265, -21.8174]} zoom={12} className="h-full">
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          <Marker position={[41.9028, 12.4964]}>
+          <Marker position={[64.1265, -21.8174]}>
             <Popup>
-              Rome, Italy
+              Reykjavik, Iceland
             </Popup>
           </Marker>
         </MapContainer>
