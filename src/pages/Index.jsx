@@ -14,9 +14,9 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div className="flex flex-col items-center justify-center p-4">
       <h1 className="text-3xl font-bold mb-4">Rome Map</h1>
-      <div className="w-full max-w-4xl h-[600px]">
+      <div className="w-full max-w-4xl h-[600px] mb-8">
         <MapContainer center={[41.9028, 12.4964]} zoom={13} className="h-full">
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
